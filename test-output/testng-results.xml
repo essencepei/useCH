@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="UI Automation Suite" duration-ms="472239" started-at="2016-06-19T01:29:35Z" finished-at="2016-06-19T01:37:27Z">
+    <groups>
+    </groups>
+    <test name="TestBaidu" duration-ms="472239" started-at="2016-06-19T01:29:35Z" finished-at="2016-06-19T01:37:27Z">
+      <class name="com.test.testcase.TestUI">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.testcase.TestUI@d697d9]" name="setUp" is-config="true" duration-ms="14680" started-at="2016-06-19T09:29:35Z" finished-at="2016-06-19T09:29:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getTestCaseName(java.lang.String)[pri:0, instance:com.test.testcase.TestUI@d697d9]" name="getTestCaseName" is-config="true" duration-ms="96" started-at="2016-06-19T09:29:50Z" finished-at="2016-06-19T09:29:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TestBaidu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestCaseName -->
+        <test-method status="FAIL" signature="testUI(java.util.Map)[pri:0, instance:com.test.testcase.TestUI@d697d9]" name="testUI" duration-ms="455332" started-at="2016-06-19T09:29:50Z" data-provider="dataProvider" finished-at="2016-06-19T09:37:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{文本值=value, 百度链接=http://www.baidu.com, 输入1=hello world, description=test demo for 1, 期望值=hello worldhello world, 输入2=hello world1, url=http://www.baidu.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 0, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.test.widget.Open.open(Open.java:41)
+	at com.test.control.TestCaseDefined.selectObjectByKeyword(TestCaseDefined.java:127)
+	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:93)
+	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:78)
+	at com.test.testcase.TestUI.testUI(TestUI.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUI -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.testcase.TestUI@d697d9]" name="tearDown" is-config="true" duration-ms="2019" started-at="2016-06-19T09:37:25Z" finished-at="2016-06-19T09:37:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.testcase.TestUI -->
+    </test> <!-- TestBaidu -->
+  </suite> <!-- UI Automation Suite -->
+</testng-results>

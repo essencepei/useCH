@@ -1,0 +1,5 @@
+loadString:
+  type:link
+  locater:kw
+rootLocation:root
+timeout:15

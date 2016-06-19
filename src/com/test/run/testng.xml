@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="UI Automation Suite" parallel="tests">
+
+  <test name="TestBaidu" preserve-order="true">
+    <parameter name="testCase" value="TestBaidu"/>
+    <classes>
+      <class name="com.test.testcase.TestUI"/>
+    </classes>
+  </test> <!-- TestBaidu -->
+<!--   
+   <test name="Qunar" preserve-order="true">
+    <parameter name="testCase" value="Qunar"/>
+    <classes>
+      <class name="com.test.testcase.TestUI"/>
+    </classes>
+  </test>
+  
+   <test name="QQEmail" preserve-order="true">
+    <parameter name="testCase" value="QQEmail"/>
+    <classes>
+      <class name="com.test.testcase.TestUI"/>
+    </classes>
+  </test>
+  
+     <test name="EmailLogin" preserve-order="true">
+    <parameter name="testCase" value="QQEmail"/>
+    <classes>
+      <class name="com.test.testcase.TestUI"/>
+    </classes>
+  </test> -->
+  
+  
+  
+</suite> <!-- UI Automation Suite -->
+

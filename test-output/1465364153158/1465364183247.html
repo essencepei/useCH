@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>testUI_1465364183247</title>
+</head>
+<style type="text/css">
+.text{font-size:36;TEXT-ALIGN: center;word-break: break-all; word-wrap:break-word;}
+.text1{font-size:20;TEXT-ALIGN: center;}
+.detail{TEXT-ALIGN: left;}
+table{text-align:center;width:100%;border-collapse:collapse;table-layout: fixed;}
+.para{text-align:left;word-break: break-all; word-wrap:break-word;}
+</style>
+<body>
+<table cellpadding="10" cellspacing="0" border="1">
+<tr>
+<td class="text" colspan="1">com.test.testcase.TestUI:testUI</td>
+</tr>
+<tr class="text1">
+<td>Parameter #1</td>
+</tr>
+<tr class="para">
+<td width=100%>{当前时间=2016-06-08, 返回时间=$('input[name=toDate]').val('2016-06-15'), url=http://www.baidu.com}</td>
+</tr>
+<tr class="detail">
+<td colspan="1">
+<h3>Test Messages</h3>
+<font color=Blue>[2016-06-08 13:35:58] ﻿"打开"{http://flight.qunar.com/}</font><br/>
+<font color=Blue>[2016-06-08 13:36:09] "页面"{qunar},选择[点击](单程)</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] [清空](出发地)</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] (出发地)[输入]{武汉}</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] [清空](目的地)</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] (目的地)[输入]{北京}</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] [清空](出发时间)</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] "创建页面对象"{com.test.util.Utils},"对象名"{util}</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] "对象"{util},调用[getDateToString]得到今天的时间日期,"返回值"{2016-06-08}</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] "页面"{qunar},(出发时间)[输入]{2016-06-08}</font><br/>
+<font color=Blue>[2016-06-08 13:36:10] [getScriptString]得到返回时间, "返回值"{$('input[name=toDate]').val('2016-06-15')}</font><br/>
+<font color=Blue>[2016-06-08 13:36:21] By.xpath: //div[@id='dom_arrivalDateDiv_disable']//div[@class='sicon'] is not exist until 10</font><br/>
+<font color=Blue> <a href="../snapshot/20160608133621181.jpg" target="_blank" style="color:red">20160608133621181.jpg</a></font><br/>
+<font color=Blue>[2016-06-08 13:36:22] <font color=Blue> <a href="../snapshot/20160608133621181.jpg" target="_blank" style="color:red">20160608133621181.jpg</a></font></font><br/>
+</td>
+</tr>
+<tr class="detail">
+<td colspan="1">
+<h3>Failure</h3>
+null<br/><br/>
+com.test.widget.Excute.excute(Excute.java:77)<br/>
+com.test.control.TestCaseDefined.selectObjectByKeyword(TestCaseDefined.java:136)<br/>
+com.test.control.TestCaseDefined.run(TestCaseDefined.java:89)<br/>
+com.test.control.TestCaseDefined.run(TestCaseDefined.java:78)<br/>
+com.test.testcase.TestUI.testUI(TestUI.java:14)<br/>
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br/>
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br/>
+java.lang.reflect.Method.invoke(Unknown Source)<br/>
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br/>
+org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br/>
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br/>
+org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br/>
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br/>
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br/>
+org.testng.TestRunner.privateRun(TestRunner.java:774)<br/>
+org.testng.TestRunner.run(TestRunner.java:624)<br/>
+org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br/>
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br/>
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br/>
+org.testng.SuiteRunner.run(SuiteRunner.java:261)<br/>
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br/>
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br/>
+org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br/>
+org.testng.TestNG.run(TestNG.java:1048)<br/>
+com.test.run.RunControl.runTestNG(RunControl.java:110)<br/>
+com.test.run.Run.main(Run.java:10)<br/>
+</td>
+</tr>
+</table>
+</body>
+</html>
