@@ -1,0 +1,19 @@
+1、在windows上安装gith客户端——msysgit，网址http://msysgit.github.io/下载。
+
+2、注册github帐号，然后在github上创建仓库
+
+3、然后在本地创建一个文件夹(名字和github上的仓库名一样，例如test)，把要同步的代码文件放进去
+
+4、最后，按照github上的提示命令执行，如下：
+
+1）本地进入到test目录，执行git init
+
+2）执行 git add . 把本地仓库中所有文件添加到版本库；
+
+3）提交：git commit -m "first"
+
+4）执行：git remote add origin https://github.com/lanjingling/test.git
+
+5）提交：git push -u origin master
+
+输入用户名、密码 即可
