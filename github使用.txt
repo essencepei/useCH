@@ -17,3 +17,5 @@
 5）提交：git push -u origin master
 
 输入用户名、密码 即可
+
+http://my.oschina.net/bxxfighting/blog/378196
