@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="UI Automation Suite" duration-ms="472239" started-at="2016-06-19T01:29:35Z" finished-at="2016-06-19T01:37:27Z">
+  <suite name="UI Automation Suite" duration-ms="65006" started-at="2016-06-19T08:04:29Z" finished-at="2016-06-19T08:05:34Z">
     <groups>
     </groups>
-    <test name="TestBaidu" duration-ms="472239" started-at="2016-06-19T01:29:35Z" finished-at="2016-06-19T01:37:27Z">
+    <test name="TestBaidu" duration-ms="65006" started-at="2016-06-19T08:04:29Z" finished-at="2016-06-19T08:05:34Z">
       <class name="com.test.testcase.TestUI">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.testcase.TestUI@d697d9]" name="setUp" is-config="true" duration-ms="14680" started-at="2016-06-19T09:29:35Z" finished-at="2016-06-19T09:29:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.testcase.TestUI@db96ac]" name="setUp" is-config="true" duration-ms="3780" started-at="2016-06-19T16:04:29Z" finished-at="2016-06-19T16:04:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="getTestCaseName(java.lang.String)[pri:0, instance:com.test.testcase.TestUI@d697d9]" name="getTestCaseName" is-config="true" duration-ms="96" started-at="2016-06-19T09:29:50Z" finished-at="2016-06-19T09:29:50Z">
+        <test-method status="PASS" signature="getTestCaseName(java.lang.String)[pri:0, instance:com.test.testcase.TestUI@db96ac]" name="getTestCaseName" is-config="true" duration-ms="27924" started-at="2016-06-19T16:04:33Z" finished-at="2016-06-19T16:05:01Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTestCaseName -->
-        <test-method status="FAIL" signature="testUI(java.util.Map)[pri:0, instance:com.test.testcase.TestUI@d697d9]" name="testUI" duration-ms="455332" started-at="2016-06-19T09:29:50Z" data-provider="dataProvider" finished-at="2016-06-19T09:37:25Z">
+        <test-method status="FAIL" signature="testUI(java.util.Map)[pri:0, instance:com.test.testcase.TestUI@db96ac]" name="testUI" duration-ms="26822" started-at="2016-06-19T16:05:03Z" data-provider="dataProvider" finished-at="2016-06-19T16:05:30Z">
           <params>
             <param index="0">
               <value>
@@ -30,19 +30,22 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IndexOutOfBoundsException">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[Index: 0, Size: 0]]>
+              <![CDATA[No match found]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
+              <![CDATA[java.lang.IllegalStateException: No match found
+	at java.util.regex.Matcher.group(Unknown Source)
+	at java.util.regex.Matcher.group(Unknown Source)
+	at com.test.control.RegExp.find(RegExp.java:18)
+	at com.test.control.RegExp.objectName(RegExp.java:105)
+	at com.test.control.RegExp.parameterName(RegExp.java:223)
 	at com.test.widget.Open.open(Open.java:41)
-	at com.test.control.TestCaseDefined.selectObjectByKeyword(TestCaseDefined.java:127)
+	at com.test.control.TestCaseDefined.selectObjectByKeyword(TestCaseDefined.java:128)
 	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:93)
 	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:78)
-	at com.test.testcase.TestUI.testUI(TestUI.java:14)
+	at com.test.testcase.TestUI.testUI(TestUI.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -65,11 +68,11 @@
 	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUI -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.testcase.TestUI@d697d9]" name="tearDown" is-config="true" duration-ms="2019" started-at="2016-06-19T09:37:25Z" finished-at="2016-06-19T09:37:27Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.testcase.TestUI@db96ac]" name="tearDown" is-config="true" duration-ms="1586" started-at="2016-06-19T16:05:33Z" finished-at="2016-06-19T16:05:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

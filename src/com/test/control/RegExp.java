@@ -43,7 +43,7 @@ public class RegExp {
 	public boolean isComments(String str) {
 		return this.match("^#.*", str.trim());
 	}
-//将返回的str中与关键字表中的关键字open对应，匹配则打开
+//将返回的str中与关键字表中的关键字open对应，匹配则返回true
 	public boolean isOpen(String str) {
 		return this.match(".*" + Keyword.getKeyword("open") + ".*", str);
 	}

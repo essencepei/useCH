@@ -128,14 +128,17 @@
                   </a> <!-- testUI({文本值=value, 百度链接=http://www.baidu.com, 输入1=hello world, description=test demo for 1, 期望值=hello world...) -->
                   <span class="method-name">testUI</span>
                   <span class="parameters">({文本值=value, 百度链接=http://www.baidu.com, 输入1=hello world, description=test demo for 1, 期望值=hello worldhello world, 输入2=hello world1, url=http://www.baidu.com})</span>
-                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
+                  <div class="stack-trace">java.lang.IllegalStateException: No match found
+	at java.util.regex.Matcher.group(Unknown Source)
+	at java.util.regex.Matcher.group(Unknown Source)
+	at com.test.control.RegExp.find(RegExp.java:18)
+	at com.test.control.RegExp.objectName(RegExp.java:105)
+	at com.test.control.RegExp.parameterName(RegExp.java:223)
 	at com.test.widget.Open.open(Open.java:41)
-	at com.test.control.TestCaseDefined.selectObjectByKeyword(TestCaseDefined.java:127)
+	at com.test.control.TestCaseDefined.selectObjectByKeyword(TestCaseDefined.java:128)
 	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:93)
 	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:78)
-	at com.test.testcase.TestUI.testUI(TestUI.java:14)
+	at com.test.testcase.TestUI.testUI(TestUI.java:15)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -203,12 +206,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testUI')
 data.setCell(0, 2, 'com.test.testcase.TestUI')
-data.setCell(0, 3, 455332);
+data.setCell(0, 3, 26822);
 window.suiteTableData['UI_Automation_Suite']= { tableData: data, tableDiv: 'times-div-UI_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-UI_Automation_Suite">
               </div> <!-- times-div-UI_Automation_Suite -->
             </div> <!-- times-div -->
@@ -241,17 +244,17 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">getTestCaseName(TestBaidu)</span>
-                <span class="method-start">14687 ms</span>
+                <span class="method-start">3789 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testUI({文本值=value, 百度链接=http://www.baidu.com, 输入1=hello world, description=test demo for 1, 期望值=hello world...)</span>
-                <span class="method-start">14796 ms</span>
+                <span class="method-start">34050 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">470210 ms</span>
+                <span class="method-start">63410 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

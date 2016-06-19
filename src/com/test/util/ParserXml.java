@@ -11,7 +11,7 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 public class ParserXml {
-	//通过filename处理xml，返回list
+	//使用dom4j处理xml，通过filename处理xml，返回list
 	public ArrayList<HashMap<String, HashMap<String, String>>> parser3Xml(
 			String fileName) {
 		File inputXml = new File(fileName);
@@ -46,6 +46,7 @@ public class ParserXml {
 				SAXReader saxReader = new SAXReader();
 				Document document = saxReader.read(inputXml);
 				Element employees = document.getRootElement();
+				//循环遍历keyword.xml，并放入configMap中
 				for (Iterator<?> i = employees.elementIterator(); i.hasNext();) {
 					Element employee = (Element) i.next();
 					configMap.put(employee.getName(), employee.getText());

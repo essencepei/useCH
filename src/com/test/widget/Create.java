@@ -25,7 +25,7 @@ public class Create {
 		ObjectManager.objectMap().put(Keyword.getKeyword("Assert"),
 				new AssertObject());
 	}
-
+//根据keyword创建log
 	public void createLog() throws DefinedException {
 		ObjectManager.objectMap().put(Keyword.getKeyword("Log"),Log.class);
 	}

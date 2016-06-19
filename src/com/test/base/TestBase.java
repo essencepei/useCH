@@ -22,11 +22,13 @@ public class TestBase {
 	public String testCase;
 
 	private TestDatas td;
-
+	//从testng.xml中读取parameter name <parameter name="testCase" value="TestBaidu"/>
 	@Parameters({ "testCase" })
 	@BeforeClass(alwaysRun = true)
+
 	public void getTestCaseName(String testCase) {
 		this.testCase = testCase;
+		//调用测试数据
 		this.getTestData();
 	}
 
@@ -47,6 +49,7 @@ public class TestBase {
 	}
 
 	private void getTestData() {
+		//获取测试数据
 		GenerateTestdata gt = new GenerateTestdata();
 		gt.generateTestdata(testCase, TestUI.class);
 		try {

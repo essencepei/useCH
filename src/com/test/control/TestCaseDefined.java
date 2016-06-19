@@ -101,7 +101,7 @@ public class TestCaseDefined {
 				ifh.executeForBlock(index);
 		}
 	}
-
+//通过关键字找对象
 	private void selectObjectByKeyword() throws DefinedException {
 		if (ifh.isLogicFlag() && re.getLogicLevel(description) == 0) {
 			String backupDesc = description;
@@ -120,6 +120,7 @@ public class TestCaseDefined {
 			description = backupDesc;
 			replaceDesc = replaceBackupDesc;
 		}
+		//关键字是否是open
 		if (re.isOpen(description)) {
 			open.setParam(param);
 			open.setDescription(description);

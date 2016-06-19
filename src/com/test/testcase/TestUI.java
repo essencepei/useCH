@@ -11,6 +11,7 @@ public class TestUI extends TestBase {
 
 	@Test(dataProvider = "dataProvider")
 	public void testUI(Map<String, String> param) throws DefinedException {
+		//testCase从testng.xml中读取 parameter value<parameter name="testCase" value="TestBaidu"/>
 		new TestCaseDefined().run(testCase, param);
 	}
 }
