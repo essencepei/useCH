@@ -10,9 +10,13 @@ public class DriverManager {
 	public static WebDriver getDriver() {
 		WebDriver driver = DriverManager.threadDriver.get();
 		if (driver == null) {
-			System.setProperty("webdriver.chrome.driver","E:\\workspace\\eclipse4.5\\ATP\\webDriver\\chromedriver.exe");
+			//home配置
+			//System.setProperty("webdriver.chrome.driver","E:\\workspace\\eclipse4.5\\ATP\\webDriver\\chromedriver.exe");
+			//公司配置
+			System.setProperty("webdriver.chrome.driver","D:\\workspace\\gitout\\WebDriver\\chromedriver.exe");
+			
 			driver = new  ChromeDriver();
-			//			driver = new FirefoxDriver();
+			//	driver = new FirefoxDriver();
 			threadDriver.set(driver);			
 		}
 		return driver;

@@ -8,7 +8,7 @@
       <class name="com.test.testcase.TestUI">
         <methods>
           <include name="getTestCaseName"/>
-          <include name="testUI" invocation-numbers="0"/>
+          <include name="testUI"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

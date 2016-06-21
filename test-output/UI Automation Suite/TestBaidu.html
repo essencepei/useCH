@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestBaidu</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jun 19 16:04:29 CST 2016</td>
+<td>Started on:</td><td>Tue Jun 21 09:04:52 CST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65006 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6368 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,65 +67,56 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.testcase.TestUI.testUI()'><b>testUI</b><br>Test class: com.test.testcase.TestUI<br>Parameters: {文本值=value, 百度链接=http://www.baidu.com, 输入1=hello world, description=test demo for 1, 期望值=hello worldhello world, 输入2=hello world1, url=http://www.baidu.com}</td>
-<td><div><pre>java.lang.IllegalStateException: No match found
-	at java.util.regex.Matcher.group(Unknown Source)
-	at java.util.regex.Matcher.group(Unknown Source)
-	at com.test.control.RegExp.find(RegExp.java:18)
-	at com.test.control.RegExp.objectName(RegExp.java:105)
-	at com.test.control.RegExp.parameterName(RegExp.java:223)
-	at com.test.widget.Open.open(Open.java:41)
-	at com.test.control.TestCaseDefined.selectObjectByKeyword(TestCaseDefined.java:128)
-	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:93)
-	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:78)
-	at com.test.testcase.TestUI.testUI(TestUI.java:15)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace206774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace206774'><pre>java.lang.IllegalStateException: No match found
-	at java.util.regex.Matcher.group(Unknown Source)
-	at java.util.regex.Matcher.group(Unknown Source)
-	at com.test.control.RegExp.find(RegExp.java:18)
-	at com.test.control.RegExp.objectName(RegExp.java:105)
-	at com.test.control.RegExp.parameterName(RegExp.java:223)
-	at com.test.widget.Open.open(Open.java:41)
-	at com.test.control.TestCaseDefined.selectObjectByKeyword(TestCaseDefined.java:128)
-	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:93)
-	at com.test.control.TestCaseDefined.run(TestCaseDefined.java:78)
-	at com.test.testcase.TestUI.testUI(TestUI.java:15)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>26</td>
-<td>com.test.testcase.TestUI@db96ac</td></tr>
+<td title='com.test.testcase.TestUI.testUI()'><b>testUI</b><br>Test class: com.test.testcase.TestUI<br>Parameters: {文本值=value, 百度链接=http://www.baidu.com, 输入1=hello world, description=test demo for 1, 期望值=hello worldhello world, 输入2=hello world1, 文本=123456789, url=http://www.baidu.com, i=3}<br/>
+<a href="#Output-1418235907" onClick='toggleBox("Output-1418235907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1418235907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1418235907">
+<font color=Blue>[2016-06-21 09:04:54] ?"打开"{http://www.baidu.com}</font><br/>
+<font color=Blue>[2016-06-21 09:04:56] "页面"{testBaidu},输入框(百度输入框)[输入]{hello worldhello world1ss}</font><br/>
+<font color=Blue>[2016-06-21 09:04:56] <百度输入框>[isDisplayed], "返回值"{true}</font><br/>
+<font color=Blue>[2016-06-21 09:04:56] "对象"{Log},输出[信息]{true}</font><br/>
+<font color=Blue>[2016-06-21 09:04:56] true</font><br/>
+<font color=Blue>[2016-06-21 09:04:56] "页面"{testBaidu},输入框(百度输入框)[输入]{hello world1}</font><br/>
+<font color=Blue>[2016-06-21 09:04:56] "对象"{this},[增加参数]{keyname,123456789}</font><br/>
+<font color=Blue>[2016-06-21 09:04:56] [点击]按钮(百度一下按钮)</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] "页面"{testBaidu},输入并点击百度一下按钮[搜索]{hello worldhello world1ss,hello world1},"返回值"{123456789}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] "对象"{Log},输出[信息]{123456789}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] 123456789</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] "如果"{1}等于{1},"并且"{2}不等于{3}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] -"对象"{Log},输出[信息]{a}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] a</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] -"如果"{1}等于{1}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] --"循环"{i}从{1}到{3}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] ---"对象"{Log},输出[信息]{1}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] 1</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] ---"对象"{Log},输出[信息]{2}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] 2</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] ---"对象"{Log},输出[信息]{3}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] 3</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] -"如果"{1}等于{1}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] --"对象"{Log},输出[信息]{a}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] a</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] "循环"{i}从{1}到{3}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] -"对象"{Log},输出[信息]{1}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] 1</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] -"对象"{Log},输出[信息]{2}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] 2</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] -"对象"{Log},输出[信息]{3}</font><br/>
+<font color=Blue>[2016-06-21 09:04:57] 3</font><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.test.testcase.TestUI@6efd9a9a</td></tr>
 </table><p>
 </body>
 </html>
